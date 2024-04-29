@@ -1,0 +1,35 @@
+.container{
+    background-color: aquamarine;
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: auto;
+}
+.rojo{
+    background-color: red;
+    cursor: pointer;
+    border-top-left-radius: 50%; 
+    
+}
+.verde{
+    background-color: green;
+    cursor: pointer;
+    border-top-right-radius: 50%;
+}
+.azul{
+    background-color: blue;
+    cursor: pointer;
+    border-end-start-radius: 50%; 
+    
+}
+.violeta{
+    background-color: purple;
+    cursor: pointer; 
+    border-end-end-radius: 50%; 
+     
+}
