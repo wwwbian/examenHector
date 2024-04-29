@@ -3,18 +3,32 @@ let botonVerde = document.getElementById('verde')
 let botonAzul = document.getElementById('azul')
 let botonVioleta = document.getElementById('violeta')
 let opacity = 1;
-const box = document.getElementById("box");
 
 botonRojo.addEventListener('click', function() {
-    alert('tocaste el boton rojo');
+    if (opacity > 0) {
+        opacity -= 0.1; 
+        botonRojo.style.backgroundColor = `rgba(240, 0, 0, ${opacity})`; 
+      }
+  
 });
 
 botonVerde.addEventListener('click', function() {
-    alert('tocaste el boton verde');
+    if (opacity > 0) {
+        opacity -= 0.1; 
+        botonVerde.style.backgroundColor =  `rgba(149, 213, 178, ${opacity})`; 
+      }
+  
 });
 botonAzul.addEventListener('click', function() {
-    alert('tocaste el boton azul');
+    if (opacity > 0) {
+        opacity -= 0.1; 
+        botonAzul.style.backgroundColor = `rgba(0, 0, 220, ${opacity})`; 
+      }
 });
 botonVioleta.addEventListener('click', function() {
-    alert('tocaste el boton violeta');
-});
+    if (opacity > 0) {
+        opacity -= 0.1;
+        botonVioleta.style.backgroundColor = `rgba(240, 0, 240, ${opacity})`; 
+      }
+})
+
